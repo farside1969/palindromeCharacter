@@ -12,16 +12,25 @@ public class PalindromeCharacter {
 // declare
         String a;
         String b="";
+// unnecessary personal secondary Strings for later use
+        String c;
+        String d;
 
 // create scanner
         Scanner in = new Scanner(System.in);
 
 // user input
-        System.out.println("Please enter characters or integers to verify if they are a palindrome or not: ");
+        System.out.println("Please enter characters or integers in amy combination to verify if they are a palindrome or not: ");
 
 // iterate user input "a" in forward direction
 // String a is ready for comparison at this point
         a = in.nextLine();
+
+// unnecessary personal secondary inputs for secondary user output statements
+        System.out.println("If your input is a Palindrome, what do you want to say about it? ");
+        c = in.nextLine();
+        System.out.println("If your input is not a Palindrome, what do you want to say about it? ");
+        d = in.nextLine();
 
 // create integer "length" for use with String "b"
         int length = a.length();
@@ -36,5 +45,11 @@ public class PalindromeCharacter {
             System.out.println(a + " is a palindrome");
         else
             System.out.println(a + " is not a palindrome");
+
+// unnecessary secondary user outputs
+        if (a.equals(b))
+            System.out.println(c);
+        else
+            System.out.println(d);
     }
 }
