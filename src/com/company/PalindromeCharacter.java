@@ -13,8 +13,10 @@ public class PalindromeCharacter {
         String a;
         String b="";
 // unnecessary personal secondary Strings for later use
-        String c;
-        String d;
+        /*
+        * String c;
+        * String d;
+        */
 
 // create scanner
         Scanner in = new Scanner(System.in);
@@ -27,10 +29,12 @@ public class PalindromeCharacter {
         a = in.nextLine();
 
 // unnecessary personal secondary inputs for secondary user output statements
-        System.out.println("If your input is a Palindrome, what do you want to say about it? ");
-        c = in.nextLine();
-        System.out.println("If your input is not a Palindrome, what do you want to say about it? ");
-        d = in.nextLine();
+        /*
+        * System.out.println("If your input is a Palindrome, what do you want to say about it? ");
+        * c = in.nextLine();
+        * System.out.println("If your input is not a Palindrome, what do you want to say about it? ");
+        * d = in.nextLine();
+        */
 
 // create integer "length" for use with String "b"
         int length = a.length();
@@ -47,9 +51,11 @@ public class PalindromeCharacter {
             System.out.println(a + " is not a palindrome");
 
 // unnecessary secondary user outputs
-        if (a.equals(b))
-            System.out.println(c);
-        else
-            System.out.println(d);
+        /*
+        * if (a.equals(b))
+        *     System.out.println(c);
+        * else
+        *     System.out.println(d);
+        */
     }
 }
